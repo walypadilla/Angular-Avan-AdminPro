@@ -7,6 +7,14 @@
 }
 
 /* colocando cursor a todos los temas */
-.selector {
-  cursor: pointer;
+#themecolors .selector,
+.cursor {
+  cursor: pointer !important;
+}
+
+#google-btn {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
