@@ -55,7 +55,9 @@ export class LoginComponent implements OnInit {
       },
       (err) => {
         // si sucede un error
-        if (err.error.errors.email) {
+        if (err.error.msg) {
+          Swal.fire('Error', err.error.msg, 'error');
+        } else if (err.error.errors.email) {
           Swal.fire('Error', err.error.errors.email.msg, 'error');
         } else {
           Swal.fire('Error', err.error.errors.password.msg, 'error');

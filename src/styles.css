@@ -18,3 +18,11 @@
   justify-content: center;
   text-align: center;
 }
+
+.img-avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 0 0 25 0px;
+  box-shadow: 0 0 25px black;
+}
